@@ -123,7 +123,7 @@ p {
 	display: flex;
 	justify-content: space-between;
 }
-.btn {
+.intro__btn .btn {
 	font-family: Montserrat;
 font-size: 22px;
 font-style: normal;
@@ -354,6 +354,9 @@ line-height: normal;
 .section__order {
 	background: #FA7201;
 }
+.order__form {
+	margin-top: 45px;
+}
 .order__caption {
 	color: var(--basic-white, #F5F5F5);
 font-family: Montserrat;
@@ -361,4 +364,193 @@ font-size: 46px;
 font-style: normal;
 font-weight: 600;
 line-height: normal;
+}
+.order__inner {
+	margin-top: 44px;
+	border-radius: 42px;
+	background: var(--basic-white, #F5F5F5);
+	box-shadow: 0px 4px 17px 0px rgba(19, 48, 117, 0.10);
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.order__title {
+	color: #0165FA;
+	font-family: Montserrat;
+	font-size: 42px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+}
+
+.order__form__inner {
+	display: flex;
+	/*align-items: center;*/
+	justify-content: space-between;
+}
+.order__block {
+	display: flex;
+	flex-direction: column;
+}
+.order__block {
+	max-width: 469px;
+	width: 100%;
+
+}
+.text__order__input {
+	max-width: 469px;
+	width: 100%;
+	border-radius: 50px;
+	background: rgba(18, 63, 167, 0.02);
+	padding-top: 18px;
+	padding-bottom: 18px;
+	padding-right: 30px;
+	padding-left: 30px;
+	color: rgba(41, 47, 51, 0.50);
+font-family: Montserrat;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 120% */
+margin-bottom: 25px;
+border: none;
+}
+textarea {
+	resize: none;
+	max-width: 469px;
+	height: 285px;
+
+}
+.submit {
+	margin-top: 140px;
+	font-family: Montserrat;
+	font-size: 22px;
+	font-style: normal;
+	font-weight: 400;	
+	line-height: normal;
+    text-align: center;
+    color: #FFF;
+    margin-right: 16px;
+    margin-left: 16px;
+    /*max-width: 469px;*/
+    /*width: 100%;*/
+	background: #0165FA;
+    padding-top: 15px;
+	padding-bottom: 15px;
+    border: none;
+    box-shadow: 0px 4px 15px 0px rgba(53, 69, 122, 0.15);
+    border-radius: 56px;
+    cursor: pointer;
+    transition: all .5s;
+}
+.title__team {
+	margin-top: 50px; 
+	color: var(--basic-black, #292F33);
+font-family: Montserrat;
+font-size: 59px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+margin-bottom: 50px;
+}
+.team__btn {
+	margin-bottom: 30px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 550px;
+	width: 100%;
+}
+.team__btn .btn {
+	border-radius: 28px;
+	background: rgba(18, 63, 167, 0.05);
+	color: rgba(41, 47, 51, 0.80);
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	font-family: Montserrat;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 24px; /* 120% */
+	cursor: pointer;
+	transition: all .5s;
+}
+.team__btn .btn__active {
+	border-radius: 28px;
+	background: #0165FA;
+	color: var(--basic-white, #F5F5F5);
+	font-family: Montserrat;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 24px; /* 120% */
+}
+/*.first__team__btn {
+	max-width: 72px;
+
+}*/
+.box__team1 {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.box__team1 .team1__inner {
+	max-width: 370px;
+	width: 100%;
+	height: 633px;
+	padding: 50px;
+	padding-top: 140px;
+	border-radius: 30px;
+	border: 7px solid #FA7201;
+	box-shadow: 0px 4px 25px 0px rgba(133, 64, 7, 0.15);
+
+}
+.img__team {
+	width: 230px;
+	height: 223px;
+	margin-bottom: 20px;
+}
+.team__description p {
+	padding-bottom: 20px;
+	color: #292F33;
+font-family: Montserrat;
+font-size: 19px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 126.316% */
+}
+.team__caption {
+	padding-bottom: 20px;
+	color: #292F33;
+font-family: Montserrat;
+font-size: 40px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+.team__description {
+	padding-bottom: 20px;
+}
+.team__arrows {
+	max-width: 170px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 auto;
+}
+.arrow__pict {
+	width: 70px;
+	height: 22px;
+	cursor: pointer;
+}
+.box1__team {
+	margin-bottom: 50px;
+}
+.seaction__team {
+	margin-bottom: 100px;
 }
