@@ -5,7 +5,8 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,100;0,200;0,400;0,500;1,800&family=Montserrat:wght@100;200;300;400;500&display=swap" rel="stylesheet">
-	
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    
 	<link rel="stylesheet" href="assets/style/animate.css">
 	<link rel="stylesheet" href="assets/style/normalize.css">
 	<link rel="stylesheet" href="assets/style/owl.carousel.min.css">
@@ -22,9 +23,10 @@
 				</div>
 				<div class="nav__row">
 					<div class="nav__links">
-						<a href="#">Buy</a>
-						<a href="#">Buy</a>
-						<a href="#">Buy</a>
+						<a href="#section1">Тарифы</a>
+						<a href="#section2">Записаться</a>
+						<a href="#section3">Команда</a>
+						<a href="#section4">Подписаться</a>
 					</div>
 				</div>
 			</nav>
@@ -51,7 +53,7 @@
 			</div>
 		</div>
 	</header>
-	<section class="section section__shop">
+	<section id="section1" class="section section__shop">
 		<div class="container">
 			<div class="shop">
 				<div class="shop__title">
@@ -105,7 +107,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="section section__order">
+	<section id="section2" class="section section__order">
 		<div class="container">
 			<div class="order">
 				<h2 class="order__caption">Сделай правильный выбор!</h2>
@@ -133,18 +135,18 @@
 		</div>
 	</section>
 
-	<section class="section seaction__team">
+	<section id="section3" class="section seaction__team">
 		<div class="container">
 			<h2 class="title__team">
 				Наша команда.
 			</h2>
 			<div class="team__btn">
-				<div class="btn btn__active	"><p>Все</p></div>
+				<div class="btn btn__active"><p>Все</p></div>
 				<div class="btn"><p>Программирование</p></div>
 				<div class="btn"><p>Математика</p></div>
 			</div>
 			<div class="box1__team">
-				<div class="box__team1">
+				<div class="box__team1 slider">
 					<div class="team1__inner">
 						<div class="img__team">
 							<img src="assets/img/man1.png" alt="" class="photo_team">
@@ -175,13 +177,43 @@
 							<p class="description__text">Сдал МА1 на А</p>
 						</div>
 					</div>
+					<div class="team1__inner">
+						<div class="img__team">
+							<img src="assets/img/man1.png" alt="" class="photo_team">
+						</div>
+						<h2 class="team__caption">Максимыч</h2>
+						<div class="team__description">
+							<p class="description__text">Преподаватель линейной алгебры</p>
+							<p class="description__text">Очень умный</p>
+						</div>
+					</div>
+					<div class="team1__inner">
+						<div class="img__team">
+							<img src="assets/img/man1.png" alt="" class="photo_team">
+						</div>
+						<h2 class="team__caption">Максимыч</h2>
+						<div class="team__description">
+							<p class="description__text">Преподаватель линейной алгебры</p>
+							<p class="description__text">Очень умный</p>
+						</div>
+					</div>
+					<div class="team1__inner">
+						<div class="img__team">
+							<img src="assets/img/man1.png" alt="" class="photo_team">
+						</div>
+						<h2 class="team__caption">Максимыч</h2>
+						<div class="team__description">
+							<p class="description__text">Преподаватель линейной алгебры</p>
+							<p class="description__text">Очень умный</p>
+						</div>
+					</div>
 				</div>
 			</div>
 			<div class="team__arrows">
-				<div class="arrow">
+				<div class="prev arrow">
 					<img class="arrow__pict arrow__pict--left" src="assets/img/ArrowL.png" alt="">
 				</div>
-				<div class="arrow">
+				<div class="next arrow">
 					<img class="arrow__pict arrow__pict--right" src="assets/img/ArrowR.png" alt="">
 				</div>
 			</div>
@@ -192,7 +224,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="section section__subscribe">
+	<section id="section4" class="section section__subscribe">
 		<div class="container">
 			<div class="subscribe">
 				<div class="subscribe__inner">
@@ -269,7 +301,7 @@
 					</div>
 				</div>
 		</div>
-		<div class="up">
+		<div id="back-to-top" class="up">
 			<img src="assets/img/up.png" alt="">
 			<p>Наверх</p>
 		</div>
@@ -277,8 +309,36 @@
 	<div class="call">
 		<img class="call__img" src="assets/img/call.png" alt="">
 	</div>
-	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
-	<script src="app/owl.carousel.min.js"></script>
+	<!-- jQuery and jQuery Smooth Scroll CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.smooth-scroll/2.2.0/jquery.smooth-scroll.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script>
+	    $(document).ready(function() {
+	        $('a').smoothScroll();
+	    });
+	    // Scroll smoothly to top
+        $('#back-to-top').click(function() {
+            $('body,html').animate({
+                scrollTop: 0
+            }, 800);
+            return false;
+        });
+        //slider
+	    $(document).ready(function(){
+	        $('.slider').slick({
+	        	slidesToShow: 3,
+            	variableWidth: true,
+            	slidesToScroll: 3,
+	            // dots: true,
+	            prevArrow: $('.prev'),
+	            nextArrow: $('.next')
+	        });
+	    });
+    </script>
+	<!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script> -->
+	<!-- <script src="app/owl.carousel.min.js"></script> -->
 	<script src="app/main.js"></script>
 	<script src="app/app.js"></script>
 </body>
