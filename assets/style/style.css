@@ -891,7 +891,9 @@ transform: rotate(180deg);
 .btn-burger-menu {
 	display: none;
 }
-
+.order__form__inner--mobile {
+	display: none;
+}
 
 /*media__screen*/
 @media screen and (max-width: 1200px) {
@@ -1154,29 +1156,49 @@ transform: rotate(180deg);
 	}
 }
 @media screen and (max-width: 660px) {
-	.nav {
-		padding-top: 20px;
-    	padding-bottom: 20px;
+	.container {
+		max-width: 1100px;
+    	padding: 0 14px;
 	}
-
+	.nav {
+		padding-top: 14px;
+    	padding-bottom: 14px;
+	}
+	.header {
+		height: 730px;
+	}
+	.intro {
+		padding-top: 170px;
+	}
+	.header__logo {
+		max-width: 0;
+		width: 0;
+	}
 	.header__logo p {
-		font-size: 30px;
+		font-size: 22px;
 	}
 	.logo__img {
-		width: 50px;
-		height: 50px;
+		width: 25px;
+		height: 25px;
 	}
 	.intro__title {
-		font-size: 55px;
+		font-size: 30px;
+	}
+	.intro__text p {
+		font-size: 20px;
 	}
 	.team__btn {
 		overflow: scroll;
 	}
 	.intro__btn .btn {
-		width: 417px;
-		padding-top: 22px;
-		padding-bottom: 22px;
-		font-size: 24px;
+		width: 277px;
+		padding-top: 16px;
+		padding-bottom: 16px;
+		font-size: 16px;
+	}
+	.call {
+		bottom: 30px;
+		right: 30px;
 	}
 	.box__team1 .team1__inner {
 		max-width: 100%;
@@ -1195,5 +1217,171 @@ transform: rotate(180deg);
 	}
 	.team__caption {
 		padding-top: 0;
+	}
+	.faq__title h2 {
+		font-size: 36px;
+	}
+	.ui-accordion .ui-accordion-header {
+		font-size: 22px;
+		padding-left: 0;
+	}
+	.ui-accordion .ui-accordion-content {
+		padding-left: 0;
+	}
+	.ui-accordion-content {
+		font-size: 18px;
+	}
+	.shop {
+		padding-top: 20px;
+		padding-bottom: 40px;
+	}
+	.shop__caption {
+		font-size: 36px;
+	}
+	.shop__subtitle {
+		font-size: 22px;
+	}
+	.shop__item {
+		padding: 20px;
+	}
+	.shop__item__title {
+		font-size: 26px;
+	}
+	.shop__text {
+		font-size: 18px;
+	}
+	.btn__shop__buy {
+		padding-top: 12px;
+		padding-bottom: 12px;
+		width: 120px;
+		font-size: 16px;
+		bottom: 25px;
+	}
+	.shop__price {
+		font-size: 22px;
+	}
+	.shop__info1 {
+		font-size: 22px;
+	}
+	.shop__suptitle {
+		margin-top: 20px;
+	}
+	.order__caption {
+		font-size: 26px;
+	}
+	.order {
+		padding-top: 30px;
+		padding-bottom: 50px;
+	}
+	.order__title {
+		font-size: 24px;
+	}
+	.order__inner {
+		padding: 20px;
+		border-radius: 25px;
+	}
+	.order__form {
+		margin-top: 15px;
+	}
+	.text__order__input {
+		padding-top: 14px;
+		padding-bottom: 14px;
+		font-size: 18px;
+		margin-bottom: 14px;
+	}
+	textarea {
+		height: 225px;
+	}
+	.submit {
+		padding-top: 12px;
+		padding-bottom: 12px;
+		font-size: 16px;
+	}
+	.title__team {
+		font-size: 30px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	.img__team {
+		width: 211px;
+		height: 261px;
+	}
+	.img__team img {
+		width: 211px;
+		height: 261px;
+	}
+	.team__btn .btn {
+		padding-top: 8px;
+		padding-bottom: 8px;
+	}
+	.team__btn .btn__active {
+		font-size: 16px;
+	}
+	.team__caption {
+		font-size: 28px;
+	}
+	.team__description p {
+		font-size: 16px;
+	}
+	.box1__team {
+		margin-bottom: 20px;
+	}
+	.owl-dots {
+		display: none;
+	}
+	.arrow__pict {
+		width: 55px;
+	}
+	.team__arrows {
+		max-width: 125px;
+	}
+	.seaction__team {
+		margin-bottom: 40px;
+	}
+	.subscribe__caption1 h2 {
+		font-size: 28px;
+	}
+	.section__subscribe input {
+		font-size: 16px;
+		padding-top: 12px;
+		padding-bottom: 12px;
+	}
+	.subscribe__text {
+		font-size: 18px;
+	}
+	.logo__subscribe img {
+		width: 240px;
+		height: 240px;
+	}
+	.section__subscribe {
+		height: 560px;
+	}
+	.footer__title h2 {
+		font-size: 32px;
+	}
+	.footer__title p {
+		font-size: 18px;
+	}
+	.footer__menu__title {
+		font-size: 22px;
+		margin-bottom: 18px;
+	}
+	.footer__menu__items {
+		font-size: 18px;
+		padding-bottom: 10px;
+	}
+	.logo__footer {
+		margin-top: 0;
+		margin-bottom: 8px;
+	}
+	.footer__menus {
+		margin-bottom: 10px;
+	}
+	.footer__social {
+		flex-direction: column;
+		align-items: baseline;
+	}
+	.social__name {
+		margin-bottom: 18px;
 	}
 }
