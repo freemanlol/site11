@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,100;0,200;0,400;0,500;1,800&family=Montserrat:wght@100;200;300;400;500&display=swap" rel="stylesheet">
@@ -10,12 +11,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <!-- cticky -->
-	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+ <!-- slider -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 	<link rel="stylesheet" href="assets/style/animate.css">
 	<link rel="stylesheet" href="assets/style/normalize.css">
-	<link rel="stylesheet" href="assets/style/owl.carousel.min.css">
 	<link rel="stylesheet" href="assets/style/style.css">
 	<title>Document</title>
 </head>
@@ -215,6 +216,15 @@
 									<button type="submit" class="submit">Записаться</button>
 								</div>
 							</div>
+							<div class="order__form__inner--mobile">
+								<input class="text__order__input" type="text" placeholder="Имя*">
+								<input class="text__order__input" type="text" placeholder="Фамилия*">
+								<input class="text__order__input" type="text" placeholder="Телефон*">
+								<input class="text__order__input" type="text" placeholder="e-mail*">
+								<input class="text__order__input" type="text" placeholder="Ник телеграм*">
+								<textarea class="text__order__input" placeholder="Комментарий"></textarea>
+								<button type="submit" class="submit">Записаться</button>
+							</div>
 						</form>
 					</div>
 				</div>
@@ -235,7 +245,7 @@
 				<div id="btn__team" class="btn"><p>Линейная алгебра</p></div>
 			</div>
 			<div class="box1__team">
-				<div class="box__team1 slider">
+				<div class="box__team1 owl-carousel">
 					<div class="team1__inner">
 						<div class="img__team">
 							<img src="assets/img/man1.jpg" alt="" class="photo_team">
@@ -258,7 +268,7 @@
 					</div>
 					<div class="team1__inner">
 						<div class="img__team">
-							<img src="assets/img/man1.jpg" alt="" class="photo_team">
+							<img src="assets/img/man3--moded.jpg" alt="" class="photo_team">
 						</div>
 						<h2 class="team__caption">Мистер </h2>
 						<div class="team__description">
@@ -268,16 +278,6 @@
 					</div>
 					<div class="team1__inner">
 						<div class="img__team">
-							<img src="assets/img/man2.jpg" alt="" class="photo_team">
-						</div>
-						<h2 class="team__caption">Максимыч</h2>
-						<div class="team__description">
-							<p class="description__text">Преподаватель линейной алгебры</p>
-							<p class="description__text">Очень умный</p>
-						</div>
-					</div>
-					<div class="team1__inner">
-						<div class="img__team">
 							<img src="assets/img/man1.jpg" alt="" class="photo_team">
 						</div>
 						<h2 class="team__caption">Максимыч</h2>
@@ -289,6 +289,16 @@
 					<div class="team1__inner">
 						<div class="img__team">
 							<img src="assets/img/man2.jpg" alt="" class="photo_team">
+						</div>
+						<h2 class="team__caption">Максимыч</h2>
+						<div class="team__description">
+							<p class="description__text">Преподаватель линейной алгебры</p>
+							<p class="description__text">Очень умный</p>
+						</div>
+					</div>
+					<div class="team1__inner">
+						<div class="img__team">
+							<img src="assets/img/man3--moded.jpg" alt="" class="photo_team">
 						</div>
 						<h2 class="team__caption">Максимыч</h2>
 						<div class="team__description">
@@ -299,10 +309,10 @@
 				</div>
 			</div>
 			<div class="team__arrows">
-				<div class="prev arrow">
+				<div class="prev customPrevBtn arrow">
 					<img class="arrow__pict arrow__pict--left" src="assets/img/ArrowL.png" alt="">
 				</div>
-				<div class="next arrow">
+				<div class="next customNextBtn arrow">
 					<img class="arrow__pict arrow__pict--right" src="assets/img/ArrowR.png" alt="">
 				</div>
 			</div>
@@ -408,6 +418,46 @@
     x
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<!-- initial slider -->
+<script>
+$(document).ready(function(){
+	var owl = $(".owl-carousel");
+  	owl.owlCarousel({
+    	items: 3,
+    	loop: true,
+    	responsive:{
+            
+            600:{
+                items:1,
+                // nav:true
+            },
+            990:{
+                items:3,
+                // nav:true
+            },
+        }
+    // autoplay: true,
+    // autoplayTimeout: 2000, //Скорость смены слайдов
+    // autoplayHoverPause: true //Пауза при наведении
+  	});
+  // Переход к следующему элементу
+  // Определите нажатие кнопки с помощью класса, который вы ей присвоили
+  $('.customNextBtn').click(function() {
+    owl.trigger('next.owl.carousel');
+  })
+
+  // Переход к предыдущему элементу
+  // Определите нажатие кнопки с помощью класса, который вы ей присвоили
+  $('.customPrevBtn').click(function() {
+    owl.trigger('prev.owl.carousel', [300]);
+  })
+
+
+});
+</script>
+
+
     <script>
 	    $(document).ready(function() {
 	        $('a').smoothScroll();
@@ -419,66 +469,9 @@
             }, 800);
             return false;
         });
-        //slider
-	    $(document).ready(function(){
-	        $('.slider').slick({
-	        	slidesToShow: 3,
-  slidesToScroll: 3,
-  responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2,
-        infinite: true,
-        dots: true
-      }
-    },
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    }
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
-  ],
-	   //      	slidesToShow: 2,
-    //         	variableWidth: true,
-    //         	slidesToScroll: 2,
-    //         	responsive: [
-    // 				{
-    //   					breakpoint: 991,
-    //   					settings: {
-    //     					slidesToShow: 1,
-    //     					slidesToScroll: 1
-    //   					}
-    // 				},
-    // 				{
-    //   					breakpoint: 660,
-    //   					settings: {
-    //     					slidesToShow: 1,
-    //     					slidesToScroll: 1
-    //   					}
-    // 				}
-				// ],
-	            // dots: true,
-	            prevArrow: $('.prev'),
-	            nextArrow: $('.next'),
+        
+        </script>
 
-
-	        });	
-	    });
-    </script>
     <script>
 	$( function() {
 	    $( "#accordion" ).accordion({
