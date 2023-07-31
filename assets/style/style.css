@@ -77,8 +77,9 @@ p {
 	font-weight: 500;
 }
 .header {
-	position: relative;
+	/*position: relative;*/
 	height: 1024px;
+	/*height: 100vh;*/
 	background: linear-gradient(180deg, #FFF 0%, #0165FA 49.48%, #FFF 100%);
 }
 .intro {
@@ -152,13 +153,11 @@ line-height: normal;
 	-moz-box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.35);
 	box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.35);
 }
-.intro__dots {
+/*.intro__dots {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	/*max-width: 117px;*/
-	/*width: 100%;*/
 }
 .intro__dots .intro__dots__item:first-child {
 	margin-top: 0;
@@ -180,12 +179,11 @@ line-height: normal;
 	flex-shrink: 0;
 	border-radius: 11px;
 	background: rgba(245, 245, 245, 0.60);
-}
-.intro__right {
+}.intro__right {
 	position: absolute;
     right: 5%;
     top: 50%;
-}
+}*/
 .call {
 	cursor: pointer;
 	position: fixed;
@@ -306,16 +304,27 @@ line-height: normal;
 	padding-bottom: 15px;
     width: 170px;
     border: none;
-
+outline: none;
     cursor: pointer;
     border-radius: 43px;
 	background: #0165FA;
-    transition: all .5s;
+    /*transition: all .1s;*/
+}
+.shop__item--gold .btn__shop__buy:hover {
+	padding-top: 11px;
+	padding-bottom: 11px;
+	color: #000;
+	border: 5px solid #FA7201;
+	outline: none;
+	background: #fff;
 }
 .btn__shop__buy:hover {
-	-webkit-box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.35);
-	-moz-box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.35);
-	box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.35);
+	padding-top: 11px;
+	padding-bottom: 11px;
+	color: #000;
+	border: 5px solid #0165FA;
+	outline: none;
+	background: #fff;
 }
 .shop__item--gold {
 	border: 7px solid #FA7201;
@@ -443,7 +452,15 @@ textarea {
     box-shadow: 0px 4px 15px 0px rgba(53, 69, 122, 0.15);
     border-radius: 56px;
     cursor: pointer;
-    transition: all .5s;
+    /*transition: all .5s;*/
+}
+.submit:hover {
+	padding-top: 11px;
+	padding-bottom: 11px;
+	color: #000;
+	border: 5px solid #0165FA;
+	outline: none;
+	background: #fff;
 }
 .title__team {
 	margin-top: 50px; 
@@ -460,7 +477,7 @@ margin-bottom: 50px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	max-width: 550px;
+	max-width: 1000px;
 	width: 100%;
 }
 .team__btn .btn {
@@ -519,6 +536,10 @@ margin-bottom: 50px;
 	width: 230px;
 	height: 223px;
 	margin-bottom: 20px;
+}
+.img__team img {
+	width: 230px;
+	height: 223px;
 }
 .team__description p {
 	padding-bottom: 20px;
@@ -712,10 +733,15 @@ font-style: normal;
 font-weight: 400;
 line-height: 14px; /* 82.353% */
 }
+/*.soc__img__tiktok {
+	width: 34px !important;
+	height: 34px !important;
+}*/
 .social__links a img {
 	width: 40px;
 	height: 40px;
 }
+
 .social__links a {
 	margin-right: 25px;
 	text-decoration: none;
@@ -745,4 +771,89 @@ line-height: 14px; /* 82.353% */
 	font-style: normal;
 	font-weight: 500;
 	line-height: 14px; /* 116.667% */
+}
+/*--- Accordion ---*/
+
+#accordion {
+            /*width: 50%;*/
+            margin: 0 auto;
+            border: none;
+            /*border-radius: 5px;*/
+            /*box-shadow: 0 2px 5px rgba(0,0,0,0.15);*/
+            outline: none;
+        }
+
+        .ui-accordion-header {
+            /*font-size: 26px;*/
+            background-color: #fff;
+            border: none;
+            color: #333;
+            border-radius: 0;
+            border-bottom: 1px solid #DFDBD8;
+            position: relative;
+            /*padding: 10px 15px;*/
+        }
+        /*Когда тайтл активный*/
+        .ui-accordion-header-active {
+            font-weight: 600;
+        }
+        /*Добавление стрелки вниз*/
+        .ui-accordion-header::after {
+            font-weight: 500;
+            content: "\25BD";
+            position: absolute;
+            right: 10px;
+        }
+        /*.ui-accordion-header.ui-accordion-header-collapsed::after {
+            content: "\25B6";
+        }*/
+        .ui-accordion-content {
+            border: none;
+            border-radius: 0;
+            /*padding: 15px;*/
+            font-size: 26px;
+            line-height: 1.5;
+            color: #555;
+        }
+        .ui-accordion .ui-accordion-header .ui-icon {
+            display: none;
+        }
+        /*Отступы в название*/
+        .ui-accordion .ui-accordion-header {
+        	font-size: 26px;
+            padding: 0;
+            padding-left: 10px;
+            padding-top: 17px;
+            padding-bottom: 17px;
+        }
+        /*Отступы в контенте*/
+        .ui-accordion .ui-accordion-content {
+            padding: 0;
+            padding-top: 10px;
+            padding-left: 9px;
+            padding-bottom: 13px;
+        }
+
+.road__map {
+	margin-bottom: 70px;
+}
+.faq__title {
+	padding-top: 20px;
+	margin-bottom: 10px;
+}
+.faq__title h2 {
+	font-size: 59px;
+}
+
+
+.nav__moded {
+padding-top: 36px;
+	padding-bottom: 36px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            display: none !important;
 }
