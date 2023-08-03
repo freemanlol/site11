@@ -895,6 +895,16 @@ transform: rotate(180deg);
 	display: none;
 }
 
+.presentation {
+	display: flex;
+	justify-content: center;
+}
+
+.line-path {
+	stroke-dasharray: 9902;
+	stroke-dashoffset: 9902;
+}
+
 /*media__screen*/
 @media screen and (max-width: 1200px) {
 	.container {
